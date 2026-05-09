@@ -13,10 +13,10 @@ spec:
         app: qr-api
     spec:
       containers:
-      - name: qr-api
-        image: rishabkumar7/devops-qr-code-backend:latest
-        ports:
-        - containerPort: 80
+        - name: qr-api
+          image: ivangalindo/devops-qr-code-backend:latest
+          ports:
+            - containerPort: 80
 
 ---
 apiVersion: v1

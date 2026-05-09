@@ -13,10 +13,10 @@ spec:
         app: qr-frontend
     spec:
       containers:
-      - name: qr-frontend
-        image: rishabkumar7/devops-qr-code-frontend:latest
-        ports:
-        - containerPort: 3000
+        - name: qr-frontend
+          image: ivangalindo/devops-qr-code-frontend:latest
+          ports:
+            - containerPort: 3000
 
 ---
 apiVersion: v1
