@@ -62,9 +62,11 @@ module "eks" {
   version = "~> 20.0"
 
   cluster_name    = "devops-capstone-project"
-  cluster_version = "1.28"
+  cluster_version = "1.31"
 
   cluster_endpoint_public_access = true
+
+  enable_cluster_creator_admin_permissions = true
 
   vpc_id                   = aws_vpc.main.id
   subnet_ids               = [aws_subnet.subnet_1.id, aws_subnet.subnet_2.id, aws_subnet.subnet_3.id]
